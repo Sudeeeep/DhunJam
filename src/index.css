@@ -86,3 +86,108 @@ body {
   text-align: center;
   font-size: 12px;
 }
+
+.dashboard-container {
+  width: 600px;
+  height: 100dvh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard-header {
+  text-align: center;
+}
+
+.admin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.charge-customer,
+.custom-song-amount,
+.regular-song-amount {
+  display: flex;
+  gap: 2rem;
+}
+
+.charge-customer-input-container input {
+  accent-color: #6741d9;
+  cursor: pointer;
+}
+
+.charge-customer-text,
+.charge-customer-input-container,
+.custom-song-amount-text,
+.custom-song-amount-input,
+.regular-song-amount-text,
+.regular-song-amount-input {
+  width: 300px;
+}
+
+.custom-song-amount-input {
+  text-align: center;
+  padding: 0.5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #030303;
+}
+
+.charge-customer-input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.regular-song-amount-input {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.regular-song-amount-input input {
+  width: 50px;
+  text-align: center;
+  padding: 0.25rem 0.5rem;
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: #030303;
+}
+
+/* to remove the side arrows on number input */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"]:disabled {
+  border: 1px solid #c2c2c2;
+  color: #c2c2c2;
+  cursor: not-allowed;
+}
+
+.save-btn {
+  background-color: #6741d9;
+  background-color: #6741d9;
+  padding: 1rem 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.save-btn:hover,
+.save-btn:focus {
+  border: 1px solid #f0c3f1;
+}
+
+.save-btn:disabled {
+  background-color: #c2c2c2;
+  border: none;
+  cursor: not-allowed;
+}

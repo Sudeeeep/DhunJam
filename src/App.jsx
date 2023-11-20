@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Login } from "./components/Login";
+import { Dashboard } from "./components/Dashboard";
 
 function App() {
   const [user, setUser] = useState(null);
@@ -11,7 +12,7 @@ function App() {
     }
   }, []);
 
-  return <>{user ? <div>Dashboard</div> : <Login setUser={setUser} />}</>;
+  return <>{user ? <Dashboard user={user} /> : <Login setUser={setUser} />}</>;
 }
 
 export default App;
